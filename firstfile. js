@@ -1,0 +1,40 @@
+document.body.onload = function() {total()};
+       
+        var f1="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/9C/BA/d8524175-e668-43b5-b665-83112e7b96a6.jpg";
+        var f2="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/A9/55/eec37384-33db-453b-86db-902296381483.jpg.webp";
+        var f3="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/32/9B/89182ade-75e3-4ff2-8e3f-00d68cd28ae8.jpg.webp";
+        var f4="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/65/8B/d4816480-e900-4178-9ee0-1a0c159e3d49.jpg.webp";
+
+
+
+    function myFunction(y) {
+  var x=  document.createElement("IMG");
+  x.setAttribute("src",y);
+  x.setAttribute("width", "320");
+  x.setAttribute("height", "320");
+  x.setAttribute("alt","hello" );
+  x.setAttribute("id","itemId");
+  document.getElementById("photos").appendChild(x);
+    }
+    
+    function changePhotos(){   
+        window.setTimeout(myFunction,0,f1);
+        window.setTimeout(remChild,3000);
+        window.setTimeout(myFunction,3000,f2);
+        window.setTimeout(remChild,6000);
+        window.setTimeout(myFunction,6000,f3);
+        window.setTimeout(remChild,9000);
+        window.setTimeout(myFunction,9000,f4);
+        window.setTimeout(remChild,11950);
+    }
+    function total(){
+        window.setTimeout(changePhotos,0);
+        window.setInterval(changePhotos,12000);
+    }
+    
+    function remChild(){
+        var item =document.getElementById("itemId");
+        item.parentNode.removeChild(item);
+    }
+
+ 
