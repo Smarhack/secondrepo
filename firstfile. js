@@ -1,11 +1,8 @@
-document.body.onload = function() {total()};
-       
+
         var f1="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/9C/BA/d8524175-e668-43b5-b665-83112e7b96a6.jpg";
         var f2="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/A9/55/eec37384-33db-453b-86db-902296381483.jpg.webp";
         var f3="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/32/9B/89182ade-75e3-4ff2-8e3f-00d68cd28ae8.jpg.webp";
         var f4="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/65/8B/d4816480-e900-4178-9ee0-1a0c159e3d49.jpg.webp";
-
-
 
     function myFunction(y) {
   var x=  document.createElement("IMG");
@@ -36,5 +33,3 @@ document.body.onload = function() {total()};
         var item =document.getElementById("itemId");
         item.parentNode.removeChild(item);
     }
-
- 
